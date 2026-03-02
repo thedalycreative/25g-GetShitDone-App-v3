@@ -23,34 +23,26 @@ Follow these steps to get your project live and ready for submission:
 
 ---
 
-## Quick Start
+## Quick Start 🚀
 
-```bash
-# 1. Clone and enter the project
-git clone <your-repo-url>
-cd getshitdone
+1.  **Clone the Project**: Open the VS Code Terminal (**Terminal > New Terminal**) and run:
+    ```bash
+    git clone https://github.com/thedalycreative/25g-GetShitDone-App-v3.git && cd 25g-GetShitDone-App-v3
+    ```
 
-# 2. Edit .env with your MongoDB URI and Gmail credentials (see Environment Variables below)
+2.  **Set Up Environment Variables**: 
+    - Create a new file called `.env` in the root folder.
+    - Copy the contents from `.env.example` into `.env`.
+    - Put your MongoDB URI and Gmail credentials inside (see **Environment Variables** below).
 
-# 3. Run the setup script (installs dependencies + starts server automatically)
-npm run setup
-```
+3.  **Run with One Command**: In the terminal, run:
+    ```bash
+    npm run setup
+    ```
 
-That's it. Open `http://localhost:3000` in your browser.
+That's it! Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 > **First time?** You need [Node.js](https://nodejs.org/) v18+ installed. Get a free [MongoDB Atlas](https://cloud.mongodb.com/) account and a [Gmail App Password](https://myaccount.google.com/apppasswords).
-
----
-**TASKS
-1. check that your mongodb uri works (add uri to .env file)
-2. check that your gmail app password works (add gmail credentials to .env file)
-3. run npm install if you haven't already
-4. start server in terminal (npm run dev)
-5. make sure that the app works (go to http://localhost:3000/dashboard)
-6. update styling, icon, fonts, colours etc. ( all in the front end folders )
-7. upload this project to subject 3 in the student hub! (this is done online at https://study.equinimcollege.com)
-8. congrats team! you did it!!!
-**
 
 ---
 
