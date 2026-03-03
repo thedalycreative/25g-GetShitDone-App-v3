@@ -46,8 +46,13 @@ if (contactForm) {
         submitBtn.disabled = true;
 
         try {
+            // Set the base URL for production vs local
+            const API_BASE = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+                ? ''
+                : 'https://get-shit-done-v3.onrender.com'; // YOUR_RENDER_URL_HERE
+
             // Send the data to our API
-            const response = await fetch('/api/mail/send-email', {
+            const response = await fetch(`${API_BASE}/api/mail/send-email`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ name, email, message })

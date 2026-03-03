@@ -6,7 +6,12 @@
    ============================================ */
 
 // Base URL for all task API calls
-const API_URL = '/api/tasks';
+// Change this to your live Render/Backend URL once deployed!
+const API_BASE = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' 
+    ? '' 
+    : 'https://get-shit-done-v3.onrender.com'; // YOUR_RENDER_URL_HERE
+
+const API_URL = `${API_BASE}/api/tasks`;
 
 
 // ============================================
